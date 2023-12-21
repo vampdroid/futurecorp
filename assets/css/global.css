@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --color-background: #161625;
+
+    --color-primary: #6016FC;
+    --color-secondary: rgba(255, 255, 255, 0.10);
+    --color-tertiary: rgba(255, 255, 255, 0.05);
+
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: rgba(255, 255, 255, 0.80);
+    --color-text-tertiary: rgba(255, 255, 255, 0.60);
+    --color-text-accent: #16FCD2;
+
+    --color-context-heading: var(--color-text-accent);
+    --color-heading: var(--color-text-primary);
+    --color-body: var(--color-text-tertiary);
+
+    --color-nav-link--active: var(--color-text-primary);
+    --color-nav-link--inactive: var(--color-text-secondary);
+
+    
+
+    --border-radius-sm: 3px;
+    /* Used in button and cards */
+    --border-radius-md: 5px;
+    /* Used in cards */
+    --border-radius-lg: 10px;
+    /* Used in cards */
+    --border-radius-x-lg: 30px;
+    /* Used in card containers */
+
+    --font-family-heading: 'Noto Sans', sans-serif;
+    --font-family-body: 'Noto Sans', sans-serif;
+
+    --font-size-x-lg: 36px;
+    --font-size-lg: 30px;
+    --font-size-md: 24px;
+    --font-size-sm: 18px;
+    --font-size-default: 16px;
+    --font-size-x-sm: 14px;
+    --font-size-xx-sm: 12px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    size: var(--font-size-default);
+}
+
+h1 {
+    font-size: var(--font-size-x-lg);
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+}
+
+h3 {
+    font-size: var(--font-size-md);
+}
+
+h4 {
+    font-size: var(--font-size-sm);
+}
+h5 {
+    font-size: var(--font-size-default);
+}
+h6 {
+    font-size: var(--font-size-x-sm);
+}

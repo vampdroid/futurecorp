@@ -1,0 +1,14 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1030px;
+}
+
+button {
+    height: fit-content;
+}
