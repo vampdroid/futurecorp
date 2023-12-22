@@ -18,6 +18,11 @@
     --color-nav-link--active: var(--color-text-primary);
     --color-nav-link--inactive: var(--color-text-secondary);
 
+    --color-button-primary: var(--color-primary);
+    --color-button-primary-active: #4110ab;
+
+    --color-button-secondary: var(--color-secondary);
+    --color-button-secondary-active: var(--color-tertiary);
     
 
     --border-radius-sm: 3px;
@@ -32,13 +37,13 @@
     --font-family-heading: 'Noto Sans', sans-serif;
     --font-family-body: 'Noto Sans', sans-serif;
 
-    --font-size-x-lg: 36px;
-    --font-size-lg: 30px;
-    --font-size-md: 24px;
-    --font-size-sm: 18px;
-    --font-size-default: 16px;
-    --font-size-x-sm: 14px;
-    --font-size-xx-sm: 12px;
+    --font-size-x-lg: clamp(30px, 4vw, 36px);
+    --font-size-lg: clamp(24px, 4vw, 30px);
+    --font-size-md: clamp(18px, 3vw, 24px);
+    --font-size-sm: clamp(15px, 3vw, 18px);
+    --font-size-default: clamp(12px, 1.75vw, 16px);
+    --font-size-x-sm: clamp(10px, 1.5vw, 14px);
+    --font-size-xx-sm: clamp(8px, 1vw, 12px);
 
 }
 
@@ -49,11 +54,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-background);
     color: var(--color-text-primary);
     font-family: var(--font-family-body);
-    size: var(--font-size-default);
+    font-size: var(--font-size-default);
 }
 
 h1 {
