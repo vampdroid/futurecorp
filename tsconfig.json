@@ -19,7 +19,7 @@
         "sourceMap": true,
         "allowSyntheticDefaultImports": true,
         "declaration": true,
-        "outDir": "./build"
+        "outDir": "./build/js"
       },
-      "include": [ "./assets/ts/*.ts", "./components/*.ts" ]
+      "include": [ "./assets/ts/*.ts", "assets/ts/components/*.ts" ]
 }

@@ -4,20 +4,20 @@
   "description": "- FutureCorp. is a pure frontend based practice project based on [Colossal Figma design by Nauval](https://www.figma.com/community/file/1061303456713302684)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc & node-sass ./assets/scss/ -o ./build/css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vampdroid/futurecorp.git"
   },
   "author": "",
-  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vampdroid/futurecorp/issues"
   },
   "homepage": "https://github.com/vampdroid/futurecorp#readme",
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "typescript": "^5.3.3"
   }
 }

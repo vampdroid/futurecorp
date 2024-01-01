@@ -1,31 +1,31 @@
-
 .section--hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 57px 0 60px 0;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        background:
+            url("/assets/images/svgs/ellipses-background/Ellipse\ 3.svg"),
+            url("/assets/images/svgs/ellipses-background/Ellipse\ 2.svg"),
+            url("/assets/images/svgs/ellipses-background/Ellipse\ 1.svg");
+        opacity: 0.1;
+
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        filter: blur(80px);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position:
+            top 198.9px left 10px,
+            top -17.5px left 532.44px,
+            top 63.65px left 210.15px;
+    }
 }
 
-.section--hero::before {
-    position: absolute;
-    display: block;
-    content: "";
-    background:
-        url("../images/svgs/ellipses-background/Ellipse\ 3.svg"),
-        url("../images/svgs/ellipses-background/Ellipse\ 2.svg"),
-        url("../images/svgs/ellipses-background/Ellipse\ 1.svg");
-    opacity: 0.1;
-
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    filter: blur(80px);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 
-        top 198.9px left 10px,
-        top -17.5px left 532.44px,
-        top 63.65px left 210.15px;
-}
 
 .container--hero {
     display: flex;
@@ -33,22 +33,23 @@
     align-items: center;
 }
 
-.info--hero {
-    padding-top: 107px;
-    text-align: center;
-}
+.info {
+    &--hero {
+        padding-top: 107px;
+        text-align: center;
 
-.info__context-heading--hero {
+        &__context-heading--hero {}
 
-}
+        &__main-heading--hero {
+            padding-top: 13px;
+        }
 
-.info__main-heading--hero {
-    padding-top: 13px;
-}
+        &__content--hero {
+            width: 90%;
+            padding-top: 24px;
+        }
 
-.info__content--hero {
-    width: 90%;
-    padding-top: 24px;
+    }
 }
 
 .buttons--hero {
@@ -57,9 +58,7 @@
     gap: 23px;
 }
 
-.cards {
-
-}
+.cards {}
 
 .cards--service {
     padding-top: 101px;
@@ -69,9 +68,7 @@
     justify-content: center;
 }
 
-.card {
-
-}
+.card {}
 
 .card--service {
     width: 328px;
