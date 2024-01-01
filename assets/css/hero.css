@@ -1,0 +1,115 @@
+
+.section--hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 57px 0 60px 0;
+}
+
+.section--hero::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background:
+        url("../images/svgs/ellipses-background/Ellipse\ 3.svg"),
+        url("../images/svgs/ellipses-background/Ellipse\ 2.svg"),
+        url("../images/svgs/ellipses-background/Ellipse\ 1.svg");
+    opacity: 0.1;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(80px);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 
+        top 198.9px left 10px,
+        top -17.5px left 532.44px,
+        top 63.65px left 210.15px;
+}
+
+.container--hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info--hero {
+    padding-top: 107px;
+    text-align: center;
+}
+
+.info__context-heading--hero {
+
+}
+
+.info__main-heading--hero {
+    padding-top: 13px;
+}
+
+.info__content--hero {
+    width: 90%;
+    padding-top: 24px;
+}
+
+.buttons--hero {
+    padding-top: 40px;
+    display: flex;
+    gap: 23px;
+}
+
+.cards {
+
+}
+
+.cards--service {
+    padding-top: 101px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+
+}
+
+.card--service {
+    width: 328px;
+    padding: 32px 40px 36px 40px;
+    background-color: var(--color-tertiary);
+    border-radius: var(--border-radius-md);
+}
+
+.card--service:hover {
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.service-icon {
+    padding: 13px;
+    background-color: var(--color-tertiary);
+    border-radius: var(--border-radius-sm);
+}
+
+.service-title {
+    padding-top: 29px;
+    color: var(--color-heading);
+}
+
+.service-content {
+    padding-top: 8px;
+    color: var(--color-body);
+}
+
+.hero-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    gap: 44px;
+    margin-top: 60px;
+    border-top: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+}

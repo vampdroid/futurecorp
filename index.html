@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Home</title>
+</head>
+
+<body>
+
+    <section class="section section--hero">
+
+        <header class="container container--header">
+
+            <div class="header-site-identity__container">
+                <div class="site-identity">
+                    <img src="./assets/images/svgs/site-logo.svg" alt="Site logo" class="site-logo">
+                    <h1 class="site-title">FutureCorp.</h1>
+                </div>
+
+                <button id="button-mobile-navigation" class="button button--icon">
+                    <img src="./assets/images/svgs/mobile-menu.svg" alt="Mobile navigation menu button" />
+                </button>
+            </div>
+
+            <div class="header-navigation__container">
+                <nav class="header-navigation">
+                    <li class="header-navigation__link">Services</li>
+                    <li class="header-navigation__link">How We Work</li>
+                    <li class="header-navigation__link">Projects</li>
+                    <li class="header-navigation__link">About</li>
+                </nav>
+                <button id="button-contact" class="button button-sm button--secondary">Contact</button>
+            </div>
+
+        </header>
+
+        <main class="container container--hero">
+            <div class="info info--hero">
+                <strong class="info__context-heading info__context-heading--hero">Client-Development Driven</strong>
+                <h1 class="info__main-heading info__main-heading--hero">We Design. We Develop. We Ship. In The Same Day.
+                </h1>
+                <p class="info__content info__content--hero">We are committed to not making clients wait. We will
+                    deliver the work as
+                    quickly as possible. Even on
+                    the same day. Even so, we do not reduce the quality of our work.</p>
+            </div>
+            <div class="buttons--hero">
+                <button class="button button--lg button--primary">Send Quote</button>
+                <button class="button button--lg button--secondary">Learn More</button>
+            </div>
+            <div class="cards cards--service">
+                <feature-card class="card card--service" image-source="./assets/images/svgs/services/figma.svg"
+                    title="Design" content="The project interface will be designed first, our favorite tool is Figma.">
+                </feature-card>
+                <feature-card class="card card--service" image-source="./assets/images/svgs/services/developer.svg"
+                    title="Develop"
+                    content="Transform design and write business logic here. Choose the technology you want.">
+                </feature-card>
+                <feature-card class="card card--service" image-source="./assets/images/svgs/services/ship.svg"
+                    title="Ship"
+                    content="After the work is complete, we will send the project and all its assets to you.">
+                </feature-card>
+            </div>
+
+            <div class="hero-logos">
+                <img src="./assets/images/svgs/logos/github.svg" alt="Github Logo" />
+                <img src="./assets/images/svgs/logos/forbes.svg" alt="Forbes Logo" />
+                <img src="./assets/images/svgs/logos/google.svg" alt="Google Logo" />
+                <img src="./assets/images/svgs/logos/microsoft.svg" alt="Microsoft Logo" />
+                <img src="./assets/images/svgs/logos/facebook.svg" alt="Facebook Logo" />
+            </div>
+        </main>
+
+    </section>
+
+    <section class="section section--how-we-work">
+
+        <div class="container container--how-we-work">
+            <img class="section-image section-image--how-we-work" src="./assets/images/svgs/how-we-work.svg" width="600" height="525"/>
+            
+        
+            <div class="info info--how-we-work">
+                <strong class="info__context-heading info__context-heading--how-we-work">HOW WE WORK?</strong>
+                <h2 class="info__main-heading info__main-heading--how-we-work">Everything is well planned, well designed and developed
+                    wholeheartedly</h2>
+                <p class="info__content info__content--how-we-work">Careful planning makes us confident, developed with best practices so
+                    that the project can be maintained. We always test projects before they are shipped.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section class="section section--our-team">
+
+        <div class="container container--our-team">
+            <div class="info info--our-team">
+                <strong class="info__context-heading info__context-heading--our-team">Our Team</strong>
+                <h2 class="info__main-heading info__main-heading--our-team">Everything is well planned, well designed and developed
+                    wholeheartedly</h2>
+                <p class="info__content info__content--our-team">Careful planning makes us confident, developed with best practices so
+                    that the project can be maintained. We always test projects before they are shipped.</p>
+            <img class="section-image section-image--our-team" src="./assets/images/svgs/team.svg" width="600" height="525"/>
+            </div>
+        </div>
+
+    </section> -->
+
+
+    <div class="divider divider--home"/>
+
+    <section class="section section--projects">
+        <div class="container container--projects">
+            <div class="info info--projects">
+            <strong class="info__context-heading">Projects</strong>
+            <h2 class="info__main-heading info__main-heading--projects">We have completed many amazing projects that you will not believe</h2>
+        </div>
+
+        <div class="design--mobile">
+            <div class="notch--up"></div>
+            <div class="notch--down"></div>
+            <div class="screen"></div>
+        </div>
+    </section>
+
+    <script type="module" src="./build/assets/ts/index.js"></script>
+    <script type="module" src="./build/components/index.js"></script>
+</body>
+
+</html>
