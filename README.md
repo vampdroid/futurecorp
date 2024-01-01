@@ -22,4 +22,4 @@
 ## Installation Guide
 1. Download or clone this repository
 2. Execute the command `npm install` to install the required modules
-3. Execute the command `tsc` once to let the typescript files compile into javascript.
+3. Execute the command `npm run compile` once to let the typescript and scss files compile in `/build` folder.
