@@ -7,35 +7,37 @@
     cursor: pointer;
     z-index: 1;
     transition: all 0.2s ease-in;
+
+    &--primary {
+        background: var(--color-button-primary);
+
+        &:hover {
+            background: var(--color-button-primary-active);
+        }
+    }
+
+
+    &--secondary {
+        background: var(--color-button-secondary);
+        box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
+
+        &:hover {
+            background: var(--color-button-secondary-active);
+            box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+
+    &--sm {
+        padding: 10px 30px;
+        font-size: var(--font-size-x-sm);
+    }
+
+    &--lg {
+        padding: 15px 55px;
+        font-size: var(--font-size-default);
+    }
+
+    &--icon {
+
+    }
 }
-
-
-.button--primary {
-    background: var(--color-button-primary);
-}
-
-.button--primary:hover {
-    background: var(--color-button-primary-active);
-}
-
-.button--secondary {
-    background: var(--color-button-secondary);
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
-}
-
-.button--secondary:hover {
-    background: var(--color-button-secondary-active);
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
-}
-
-.button-sm {
-    padding: 10px 30px;
-    font-size: var(--font-size-x-sm);
-}
-
-.button--lg {
-    padding: 15px 55px;
-    font-size: var(--font-size-default);
-}
-
-.button--icon {}

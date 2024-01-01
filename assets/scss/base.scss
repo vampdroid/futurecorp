@@ -9,28 +9,27 @@
     max-width: 1030px;
 }
 
-
 .info {
     width: 600px;
     max-width: 100%;
-}
 
-.info__context-heading {
-    text-transform: uppercase;
-    color: var(--color-context-heading);
-    font-weight: 600;
-}
+    &__context-heading{
+        text-transform: uppercase;
+        color: var(--color-context-heading);
+        font-weight: 600;
+    }
 
-.info__main-heading {
-    padding-top: 13px;
-    color: var(--color-heading);
-}
+    &__main-heading {
+        padding-top: 13px;
+        color: var(--color-heading);
+    }
 
-.info__content {
-    width: 90%;
-    padding-top: 24px;
-    font-weight: 500;
-    color: var(--color-body);
+    &__content {
+        width: 90%;
+        padding-top: 24px;
+        font-weight: 500;
+        color: var(--color-body);
+    }
 }
 
 .divider {
