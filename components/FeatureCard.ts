@@ -1,11 +1,9 @@
 const featureCardStyles = `
-.card--service {
-    width: 328px;
-    padding: 32px 40px 36px 40px;
-    background-color: var(--color-tertiary);
-    border-radius: var(--border-radius-md);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 .service-icon {
     padding: 13px;
     background-color: var(--color-tertiary);
@@ -37,38 +35,43 @@ ${featureCardMarkup}
 `;
 
 class FeatureCard extends HTMLElement {
+
+    private cardImage: HTMLImageElement;
+    private cardTitle: HTMLHeadingElement;
+    private cardContent: HTMLParagraphElement;
+
 	constructor() {
 		super();
 		let shadowDOM = this.attachShadow({ mode: 'open' });
 		shadowDOM.append(featureCardTemplate.content.cloneNode(true));
 
-		this.cardImage = this.shadowRoot.querySelector('.service-icon');
-		this.cardTitle = this.shadowRoot.querySelector('.service-title');
-		this.cardContent = this.shadowRoot.querySelector('.service-content');
+		this.cardImage = this.shadowRoot?.querySelector('.service-icon') as HTMLImageElement;
+		this.cardTitle = this.shadowRoot?.querySelector('.service-title') as HTMLHeadingElement;
+		this.cardContent = this.shadowRoot?.querySelector('.service-content') as HTMLParagraphElement;
 	}
 
 	static get observedAttributes() {
 		return ['image-source', 'title', 'content'];
 	}
 
-	attributeChangedCallback(name, oldValue, newValue) {
+	attributeChangedCallback(name: string): void {
 		if (name === 'image-source') {
 			this.cardImage.setAttribute(
 				'src',
-				this.getAttribute('image-source')
+				this.getAttribute('image-source') || ''
 			);
 		}
 
 		if (name === 'title') {
-			this.cardTitle.innerText = this.getAttribute('title');
+			this.cardTitle.innerText = this.getAttribute('title') || '';
 		}
 
 		if (name === 'content') {
-			this.cardContent.innerText = this.getAttribute('content');
+			this.cardContent.innerText = this.getAttribute('content') || '';
 		}
 	}
 
-	connectedCallback() {}
+	connectedCallback(): void {}
 }
 
 customElements.define('feature-card', FeatureCard);

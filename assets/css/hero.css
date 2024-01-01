@@ -33,32 +33,25 @@
     align-items: center;
 }
 
-.hero__info {
+.info--hero {
     padding-top: 107px;
-    width: 600px;
-    max-width: 100%;
     text-align: center;
 }
 
-.hero__info__context-heading {
-    text-transform: uppercase;
-    color: var(--color-context-heading);
-    font-weight: 600;
+.info__context-heading--hero {
+
 }
 
-.hero__info__main-heading {
+.info__main-heading--hero {
     padding-top: 13px;
-    color: var(--color-heading);
 }
 
-.hero__info__content {
+.info__content--hero {
     width: 90%;
     padding-top: 24px;
-    font-weight: 500;
-    color: var(--color-body);
 }
 
-.hero__buttons {
+.buttons--hero {
     padding-top: 40px;
     display: flex;
     gap: 23px;
@@ -85,6 +78,11 @@
     padding: 32px 40px 36px 40px;
     background-color: var(--color-tertiary);
     border-radius: var(--border-radius-md);
+}
+
+.card--service:hover {
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .service-icon {
