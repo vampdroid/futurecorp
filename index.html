@@ -127,33 +127,14 @@
             </div>
 
 
-            <div class="project-designs">
-                <div class="project-design">
-                    <div class="screen-design">
-                        <div class="notch--up"></div>
-                        <div class="notch--down"></div>
-                        <div class="screen screen--mobile"></div>
-                    </div>
-                    <h4 class="project-design--title">The Mobile App Landing Page</h4>
-                    <p class="project-design--content">A landing page for mobile app</p>
-                    <button class="button button--sm button--circular project-design--detail-button">Detail</button>
-                </div>
-                <div class="project-design">
-                    <div class="screen-design">
-                        <div class="notch--up"></div>
-                        <div class="notch--down"></div>
-                        <div class="screen screen--desktop"></div>
-                    </div>
-
-                    <h4 class="project-design--title">The Desktop App Landing Page</h4>
-                    <p class="project-design--content">A landing page for desktop app</p>
-                    <button class="button button--sm button--circular project-design--detail-button">Detail</button>
-                    
-                </div>
-
-            </div>
+            <projects-list>
+                <single-project screen-mobile="true" project-title="The Mobile App Landing Page" project-content="A landing page for mobile app" project-link-text="Detail" project-link="#"></single-project>
+                <single-project screen-desktop="true" project-title="The Desktop App Landing Page" project-content="A landing page for desktop app" project-link-text="Detail" project-link="#"></single-project>
+            </projects-list>
 
     </section>
+
+    
 
     <script type="module" src="./build/js/index.js"></script>
 </body>

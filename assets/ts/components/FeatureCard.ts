@@ -1,24 +1,5 @@
 const featureCardStyles = `
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.service-icon {
-    padding: 13px;
-    background-color: var(--color-tertiary);
-    border-radius: var(--border-radius-sm);
-}
-
-.service-title {
-    padding-top: 29px;
-    color: var(--color-heading);
-}
-
-.service-content {
-    padding-top: 8px;
-    color: var(--color-body);
-}
+    <link rel="stylesheet" href="./build/css/index.css" />
 `;
 
 const featureCardMarkup = `
@@ -30,7 +11,7 @@ const featureCardMarkup = `
 let featureCardTemplate = document.createElement('template');
 
 featureCardTemplate.innerHTML = `
-<style>${featureCardStyles}</style>
+${featureCardStyles}
 ${featureCardMarkup}
 `;
 

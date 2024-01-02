@@ -18,10 +18,13 @@
     padding-top: 4px;
 }
 
-.project-designs {
+.project-designs, projects-list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
 
     @media only screen and (max-width: 768px) {
 
@@ -41,15 +44,15 @@
     box-shadow: 0px 30px 60px 0px rgba(96, 22, 252, 0.03);
 }
 
-.project-design {
+.project-design, single-project {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 0 0 45%;
     align-items: center;
 
     @media only screen and (max-width: 768px) {
 
-        width: 100%;
+        // width: 100%;
 
     }
 }
@@ -115,6 +118,7 @@
     
     &--detail-button {
         margin-top: 38px;
+        text-decoration: none;
     }
 
 }
