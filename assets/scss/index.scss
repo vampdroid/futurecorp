@@ -1,9 +1,8 @@
-@import './global.css';
-@import './base.css';
-@import './button.css';
-@import './header.css';
-@import './hero.css';
-@import './info-component.css';
-@import './how-we-work.css';
-@import './projects.css';
-@import './design.css';
+@import './partials/global';
+@import './partials/base';
+@import './partials/button';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/how-we-work';
+@import './sections/projects';
+@import './sections/our-team';

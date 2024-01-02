@@ -37,9 +37,10 @@
     --font-family-heading: 'Noto Sans', sans-serif;
     --font-family-body: 'Noto Sans', sans-serif;
 
-    --font-size-x-lg: clamp(30px, 4vw, 36px);
-    --font-size-lg: clamp(24px, 4vw, 30px);
-    --font-size-md: clamp(18px, 3vw, 24px);
+    --font-size-xx-lg: clamp(30px, 4vw, 36px);
+    --font-size-x-lg: clamp(24px, 4vw, 30px);
+    --font-size-lg: clamp(18px, 3vw, 24px);
+    --font-size-md: clamp(16px, 3vw, 20px);
     --font-size-sm: clamp(15px, 3vw, 18px);
     --font-size-default: clamp(12px, 1.75vw, 16px);
     --font-size-x-sm: clamp(10px, 1.5vw, 14px);
@@ -67,22 +68,22 @@ body {
 }
 
 h1 {
-    font-size: var(--font-size-x-lg);
+    font-size: var(--font-size-xx-lg);
 }
 
 h2 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-x-lg);
 }
 
 h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 }
 
 h4 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
 }
 h5 {
-    font-size: var(--font-size-default);
+    font-size: var(--font-size-sm);
 }
 h6 {
     font-size: var(--font-size-x-sm);

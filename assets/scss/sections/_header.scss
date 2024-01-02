@@ -45,14 +45,12 @@
             color: var(--color-nav-link--active);
             cursor: pointer;
         }
-
-        #button-mobile-navigation {
-            display: none;
-        }
     }
 }
 
-
+#button-mobile-navigation {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
 

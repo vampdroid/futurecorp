@@ -4,7 +4,9 @@
   "description": "- FutureCorp. is a pure frontend based practice project based on [Colossal Figma design by Nauval](https://www.figma.com/community/file/1061303456713302684)",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc & node-sass ./assets/scss/ -o ./build/css"
+    "compile": "tsc & node-sass ./assets/scss/ -o ./build/css",
+    "sass-watch": "node-sass --watch ./assets/scss/ -o ./build/css",
+    "tsc-watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
