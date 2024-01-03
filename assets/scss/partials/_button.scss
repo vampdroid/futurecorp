@@ -36,11 +36,18 @@
     &--sm {
         padding: 10px 30px;
         font-size: var(--font-size-x-sm);
+
+        @media only screen and (max-width: 600px) {
+            padding: 5px 15px;
+        }
     }
 
     &--lg {
         padding: 15px 55px;
         font-size: var(--font-size-default);
+        @media only screen and (max-width: 600px) {
+            padding: 10px 30px;
+        }
     }
 
     &--icon {
