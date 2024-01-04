@@ -3,7 +3,6 @@ const serviceCardStyles = `
 `;
 
 const serviceCardMarkup = `
-<div class="card card--service">
     <div class="card--service__header">
         <p class="card--service__header__name">UI Design</p>
         <div class="card--service__header__info">
@@ -16,7 +15,6 @@ const serviceCardMarkup = `
     <slot name="service-list"></slot>
 
     <a href="#" class="button button--lg card--service__button"></a>
-</div>
 `;
 
 let serviceCardTemplate = document.createElement('template');
@@ -29,9 +27,6 @@ ${serviceCardMarkup}
 
 class ServiceCard extends HTMLElement {
 
-
-    private cardContainer: HTMLDivElement;
-
     private cardName: HTMLParagraphElement;
     private cardPrice: HTMLParagraphElement;
     private cardButton: HTMLAnchorElement;
@@ -41,8 +36,6 @@ class ServiceCard extends HTMLElement {
 
         let shadowDOM = this.attachShadow({ mode: 'open' });
         shadowDOM.append(serviceCardTemplate.content.cloneNode(true));
-
-        this.cardContainer = this.shadowRoot?.querySelector('.card--service') as HTMLDivElement;
         this.cardName = this.shadowRoot?.querySelector('.card--service__header__name') as HTMLParagraphElement;
         this.cardPrice = this.shadowRoot?.querySelector('.card--service__header__price') as HTMLParagraphElement;
         this.cardButton = this.shadowRoot?.querySelector('.card--service__button') as HTMLAnchorElement;
@@ -55,7 +48,8 @@ class ServiceCard extends HTMLElement {
     attributeChangedCallback(name: string): void {
 
         if (name === 'card-color') {
-            this.cardContainer.classList.add(this.getAttribute('card-color') || '');
+            this.classList.add(this.getAttribute('card-color') || '');
+            this.cardButton.classList.add(this.getAttribute('card-color') || '');
         }
 
         if (name === 'service-name') {

@@ -1,0 +1,26 @@
+.section--send-quote {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container--send-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 47px 0;
+    gap: 20px;
+}
+
+.send-quote {
+
+    &__heading {
+        width: 55%;
+    }
+    &__buttons {
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
