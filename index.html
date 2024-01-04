@@ -127,8 +127,12 @@
 
 
             <projects-list>
-                <single-project screen-mobile="true" project-title="The Mobile App Landing Page" project-content="A landing page for mobile app" project-link-text="Detail" project-link="#"></single-project>
-                <single-project screen-desktop="true" project-title="The Desktop App Landing Page" project-content="A landing page for desktop app" project-link-text="Detail" project-link="#"></single-project>
+                <single-project screen-mobile="true" project-title="The Mobile App Landing Page"
+                    project-content="A landing page for mobile app" project-link-text="Detail"
+                    project-link="#"></single-project>
+                <single-project screen-desktop="true" project-title="The Desktop App Landing Page"
+                    project-content="A landing page for desktop app" project-link-text="Detail"
+                    project-link="#"></single-project>
             </projects-list>
 
     </section>
@@ -139,64 +143,41 @@
 
             <div class="info info--get-started">
                 <strong class="info__context-heading info__context-heading--get-started">GET STARTED</strong>
-                <h2 class="info__main-heading info__main-heading--get-started">What do you need? Choose a service that can help you</h2>
+                <h2 class="info__main-heading info__main-heading--get-started">What do you need? Choose a service that
+                    can help you</h2>
             </div>
 
             <div class="cards cards--service">
-                <div class="card card--service purple">
-                    <div class="card--service__header">
-                        <p class="card--service__header__name">UI Design</p>
-                        <div class="card--service__header__info">
-                            <p class="card--service__header__text">Starting from</p>
-                            <p class="card--service__header__price">1200$</p>
-                        </div>
-                    </div>
-                    <div class="divider divider--services"></div>
-                    <ul class="card--service__list">
+
+                <service-card card-color="purple" service-name="UI Design" service-price="1200$"
+                    service-button-text="Detail" service-button-url="#">
+                    <ul slot="service-list" class="card--service__list">
                         <li class="card--service__list__item">10 design pages</li>
                         <li class="card--service__list__item">Well-documented</li>
                         <li class="card--service__list__item">4 revisions</li>
                         <li class="card--service__list__item">$100/additional page</li>
                     </ul>
+                </service-card>
 
-                    <button class="button button--lg card--service__button">Detail</button>
-                </div>
-                <div class="card card--service blue">
-                    <div class="card--service__header">
-                        <p class="card--service__header__name">UI Design</p>
-                        <div class="card--service__header__info">
-                            <p class="card--service__header__text">Starting from</p>
-                            <p class="card--service__header__price">1200$</p>
-                        </div>
-                    </div>
-                    <div class="divider divider--services"></div>
-                    <ul class="card--service__list">
+                <service-card card-color="blue" service-name="UI Design" service-price="1200$"
+                    service-button-text="Detail" service-button-url="#">
+                    <ul slot="service-list" class="card--service__list">
                         <li class="card--service__list__item">10 design pages</li>
                         <li class="card--service__list__item">Well-documented</li>
                         <li class="card--service__list__item">4 revisions</li>
                         <li class="card--service__list__item">$100/additional page</li>
                     </ul>
+                </service-card>
 
-                    <button class="button button--lg card--service__button">Detail</button>
-                </div>
-                <div class="card card--service pink">
-                    <div class="card--service__header">
-                        <p class="card--service__header__name">UI Design</p>
-                        <div class="card--service__header__info">
-                            <p class="card--service__header__text">Starting from</p>
-                            <p class="card--service__header__price">1200$</p>
-                        </div>
-                    </div>
-                    <div class="divider divider--services"></div>
-                    <ul class="card--service__list">
+                <service-card card-color="pink" service-name="UI Design" service-price="1200$"
+                    service-button-text="Detail" service-button-url="#">
+                    <ul slot="service-list" class="card--service__list">
                         <li class="card--service__list__item">10 design pages</li>
                         <li class="card--service__list__item">Well-documented</li>
                         <li class="card--service__list__item">4 revisions</li>
                         <li class="card--service__list__item">$100/additional page</li>
                     </ul>
-
-                    <button class="button button--lg card--service__button">Detail</button>
-                </div>
+                </service-card>
             </div>
 
         </div>
@@ -204,7 +185,7 @@
     </section>
 
 
-    
+
 
     <script type="module" src="./build/js/index.js"></script>
 </body>
