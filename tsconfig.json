@@ -21,5 +21,5 @@
         "declaration": true,
         "outDir": "./build/js"
       },
-      "include": [ "./assets/ts/*.ts", "assets/ts/components/*.ts" ]
+      "include": [ "./assets/ts/*.ts", "assets/ts/components/*.ts", "assets/ts/components/header/SiteIdentity.ts" ]
 }

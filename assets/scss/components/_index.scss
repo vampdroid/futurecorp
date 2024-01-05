@@ -1,0 +1,107 @@
+/*
+    Recommended Properties order:
+
+    Positioning;
+    Display and Box Model;
+    Color;
+    Text;
+    Others;
+
+    Also do specify the default properties like flex-direction: row for better readability.
+
+*/
+section-container {
+    display: block;
+
+    margin: auto;
+    margin-top: 57px;
+
+    width: 90%;
+    max-width: 1030px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    site-identity {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 17.25px;
+
+        h1 {
+            font-size: var(--font-size-lg);
+        }
+    }
+
+    site-navigation-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        list-style: none;
+
+        li {
+            color: var(--color-nav-link--inactive);
+
+            transition: all 0.2s ease-in;
+
+            &:hover {
+
+                color: var(--color-nav-link--active);
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+page-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto;
+    padding-top: 107px;
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+
+    page-title {
+        padding-top: 13px;
+    }
+
+    info-paragraph {
+        padding-top: 24px;
+        width: 90%;
+    }
+
+    custom-buttons {
+        padding-top: 40px;
+    }
+
+}
+
+context-title {
+    color: var(--color-context-heading);
+
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+page-title {
+    color: var(--color-heading);
+}
+
+
+info-paragraph {
+    color: var(--color-body);
+
+    font-weight: 500;
+}

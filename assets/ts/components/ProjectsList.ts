@@ -18,16 +18,11 @@ class ProjectsList extends HTMLElement {
 
 	constructor() {
 		super();
-		// let shadowDOM = this.attachShadow({ mode: 'open' });
-		// shadowDOM.append(projectsListTemplate.content.cloneNode(true));
+		
 	}
 
     connectedCallback() {
-        // this.innerHTML = `
-        // <div class="project-designs">
-        //     ${this.innerHTML}
-        // </div>
-        // `
+        
     }
 }
 

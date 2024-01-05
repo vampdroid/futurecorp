@@ -1,0 +1,57 @@
+custom-button {
+    z-index: 1;
+
+    border: none;
+    border-radius: var(--border-radius-sm);
+
+    background: none;
+    color: var(--color-text-primary);
+    
+    font-family: var(--font-family-body);
+    
+
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+custom-button[size="sm"] {
+    padding: 10px 30px;
+    font-size: var(--font-size-x-sm);
+
+    @media only screen and (max-width: 600px) {
+        padding: 5px 15px;
+    }
+}
+
+custom-button[size="lg"] {
+    padding: 15px 55px;
+    font-size: var(--font-size-default);
+
+    @media only screen and (max-width: 600px) {
+        padding: 10px 30px;
+    }
+}
+
+custom-button[theme="primary"] {
+    background: var(--color-button-primary);
+
+    &:hover {
+        background: var(--color-button-primary-active);
+    }
+}
+
+custom-button[theme="secondary"] {
+    background: var(--color-button-secondary);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
+
+    &:hover {
+        background: var(--color-button-secondary-active);
+        box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+custom-button[theme="circular"] {
+    border-radius: 100px;
+    border: 1px solid var(--color-text-primary);
+    background-color: transparent;
+}
